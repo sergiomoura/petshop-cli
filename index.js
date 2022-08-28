@@ -31,11 +31,13 @@ function tratarRespostas(respostas) {
 
         case acoes.ADICIONAR:
             funcoes.adicionar(
-                respostas.nomeDoCachorro,
-                respostas.sexoDoCachorro,
-                respostas.cachorroCastrado=="Sim",
-                respostas.dataNascimentoDoCachorro,
-                respostas.pesoDoCachorro
+                {
+                    nome: respostas.nomeDoCachorro,
+                    sexo: respostas.sexoDoCachorro,
+                    castrado: respostas.cachorroCastrado=="Sim",
+                    dataDeNascimento: respostas.dataNascimentoDoCachorro,
+                    peso: respostas.pesoDoCachorro
+                }
             );
         break;
 
