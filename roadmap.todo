@@ -1,0 +1,79 @@
+Construindo funções no arquivo funcoes.js
+Implemente as funções salvar e buscar por id.
+Elas já estão posicionadas no arquivo funcoes.js.
+As demais funções abaixo devem ser criadas como atributo do objeto
+literal que será exportado.
+
+☐ Implemente a função salvar.
+  . Ela precisa salvar o conteúdo da constante cachorros no arquivo database/cachorros.json
+  . Ela não precisa receber nenhum parâmetro nem retornar nada.
+
+☐ Implemente a função buscar.
+  . Essa função deve receber como parâmetro o id do cachorro buscado.
+  . Essa função deve retornar o cachorro com o id buscado ou emitir um erro
+    caso não exista cachorro com o id buscado.
+
+☐ Crie uma função chamada listar
+  . Essa função deve imprimir no console uma tabela
+    com as informações dos cachorros cadastrados.
+    Dica: experimente a função console.table
+  . Essa função não deve receber nenhum parâmetro
+  . Essa função não deve retornar nada.
+
+☐ Crie uma função chamada descrever
+  . Essa deve imprimir todas as informações de um cachorro.
+  . Ela deve receber o id do cachorro a ser descrito.
+  . Ela não deve retornar nada como parâmetro.
+  . Caso não exista nenhum cachorro com o id passado, 
+    essa função deve imprimir uma mensagem: ..
+      `Não existe cachorro com o id ${id}`
+
+☐ Crie uma função chamada adicionar
+  . Essa função deve adicionar um novo cachorro no arquivo
+    de cachorros.
+  . Essa função deve receber como parâmetro um objeto literal com os seguintes campos
+      + nome (string)
+      + sexo (string)
+      + castrado (boolean),
+      + dataDeNascimento (string no formato "AAAA-MM-DD"),
+      + peso (number)
+  . Essa função não deve retornar nada.
+  . Atente para que o id do novo cachorro adicionado seja diferente de qualquer outro já existente.
+  . Lembre de atribuir um array vazio para vacinas e para servicos
+  . Adicione o objeto literal que tem as informações do cachorro
+    ao array de cachorros.
+  . Salve o array de cachorros em forma de JSON no arquivo
+    database/cachorros.json
+
+☐ Crie uma função chamada vacinar.
+  . Essa função deve adicionar um objeto literal com
+    as informações de uma vacina (nome e data da aplicação) no array de vacinas de um cachorro.
+  . Ela deve receber três parâmetros *nesta ordem*
+      + id  (Id cachorro do cachorro a ser vacinado)
+      + vacina (Nome da vacina)
+      + data (uma string em formato AAAA-MM-DD)
+
+  . Essa função não retorna nada.
+  . Essa função deve imprimir uma mensagem "Cachorro inexistente"
+    não exista um cachorro com o id passado.
+
+☐ Crie uma função chamada atribuirServico
+  . Essa função deve adicionar um serviço ao array de serviços
+    de um cachorro
+  . Ela deve receber três parâmetros *nesta ordem*
+    + id  (Id cachorro do cachorro a ser vacinado)
+    + servico (string que dá nome ao serviço)
+    + data (uma string em formato AAAA-MM-DD)
+  . Essa função não retorna nada.
+  . Essa função deve imprimir uma mensagem "Cachorro inexistente"
+    não exista um cachorro com o id passado.
+
+☐  Crie uma função chamada remover
+  . Essa função deve remover um cachorro do array e salvar o array
+    no arquivo.
+  . Ela deve recber como um único parâmetro o id cachorro a remover)
+  . Essa função não deve retornar nada
+  . Essa função deve imprimir uma mensagem "Cachorro inexistente"
+    caso não exista um cachorro com o id passado.
+      
+    
